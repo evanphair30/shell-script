@@ -1,0 +1,20 @@
+#!/bin/bash
+
+clear
+
+echo "Enter the Number of times for the song";read number
+
+start=100
+
+while [[ $start -ge $number ]]; do
+
+echo "$start bottles of beers"
+echo "take one down, pass it around,"
+
+start=$(( start - 1 ))
+
+echo "$start bottles of beer on the wall"
+echo
+done
+
+

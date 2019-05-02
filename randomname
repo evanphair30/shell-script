@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+
+# Author: Evan Phair
+# Date: 9/12/16
+# Description: Create a file w. a unique name. 
+
+# Random 10 character string.
+filename=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c10)
+
+# While the file does not have a unique name...
+if [ -e "$filename" ]; then
+	# Come up with a new one.
+	filename=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c10)
+# End loop.
+fi
+
+# Create the file.
+touch $filename

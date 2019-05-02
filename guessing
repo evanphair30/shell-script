@@ -1,0 +1,19 @@
+#!/bin/bash
+
+clear
+
+number=$RANDOM
+
+echo "Guess A Number";read guess
+
+clear
+
+while (( "$guess" != "$number" )); do
+	echo "Guess Again";read choice
+	if (( $choice -lt $number )); then
+	echo "Higher..."
+	elif (( $choice -gt $number )); then
+	echo "Lower..."
+	fi
+done
+

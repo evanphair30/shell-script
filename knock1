@@ -1,0 +1,25 @@
+#!/bin/sh
+# Author: Evan Phair
+# Date: 10/7/16
+# Description: A knock-knock joke so bad it's good.
+
+clear
+
+err="It's a knock-knock joke... Reply appropriately."
+
+# Starting the joke.
+echo "Knock Knock";read response
+if [ "$response" != "Who's there?" ]; then
+    echo $err
+    exit
+fi
+
+# Setting up our big moment.
+echo "Convex";read response
+if [ "$response" != "Convex who?" ]; then
+    echo $err 
+    exit
+fi
+
+# Delivering the punchline.
+echo "Convex go to prison!"

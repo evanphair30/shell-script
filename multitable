@@ -1,0 +1,15 @@
+#!/bin/bash
+
+clear
+echo "Enter a Number"
+read number
+
+echo "Enter a desired  Range"
+read range
+i=0
+while [ $i -le $range ]
+do
+    echo " $number x $i = `expr $range \* $i`"
+    i=`expr $i + 1`
+done 
+

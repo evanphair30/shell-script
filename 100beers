@@ -1,0 +1,15 @@
+#!/bin/bash
+
+clear
+echo "Ask user";read number
+
+while [[ $number -ge 1 ]]; do
+  echo "$number bottles of beer on the wall,"
+  echo "$number bottles of beers"
+  echo "take one down, pass it around,"
+  number=$(( number  - 1 ))
+  echo "$number bottles of beer on the wall"
+  echo
+done
+
+#start from the top 100-1

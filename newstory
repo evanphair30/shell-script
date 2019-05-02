@@ -1,0 +1,120 @@
+#!/bin/bash
+
+clear
+
+
+echo "A.Live at the Presidental Debate lets start with Hillary Clinton ...
+B.Live at the Presidental Debate lets start with Donald Trump...";read value
+
+if [ $value = "A" ]
+then
+  
+  echo "A.Well Donald, You have been very offensive and you should drop out... 
+B.Donald, Do you think this race is some kind of Joke...";read choice
+    if [ $choice = "A" ]
+     then
+            echo "A.Hillary, I will never drop out maybe you should... 
+B.I ask myself how Hillary is in this race oh yeah Cheating...";read option	    
+		if [ $option = "A" ]
+		then
+     			echo "A.Donald, I have told you that I will crush you...
+B.Donald, I heard that and NO I will not make you my secretary of defense...";read pick
+	  		if [ $pick = "A" ]
+			then
+		    		echo "Hilary, maybe you should ahhhh...I step down Mike Pence your in charge..."
+		    	else
+		        	echo "Get Real Hilary more like the other way around at least i'm being honest unlike you."
+			fi
+		 else
+	       		echo "A.Know Know, Donald lets not get crazy...Okay... 
+B.I never cheated in my life but...";read pick
+			if [ $pick = "A" ]
+			then
+    				echo "Enough! I will knock the hell out of ISIS but you want to play stupid with Mark Cuban and i'm done"
+    			else
+        			echo "Your right Hillary I meant bill"
+			fi
+		fi
+       
+     else
+	    echo "A. Well Hillary, I believe you are a joke and need to be in Jail...
+B. Well Hillary, I know you are a joke who is crooked from head to Toe...";read option 
+
+		if [ $option = "A" ]
+                then
+		         echo "A.Donald can you even spell Jail...
+B.Donald you want to talk about crooked why don't you release your tax return";read pick
+			if [ $pick = "A" ]
+			then
+		    		echo "J-A-E-L I mean oh nevermind your a waste of my time see ya"
+		    	else
+		        	echo "Listen Hillary you are right i already released them to the public just check MAKE AMERICA GREAT AGAIN's Myspace page "
+			fi
+		else	
+			 echo "A.Donald can u please explain to me how I am Crooked
+B.Donald, Your Hair is a joke for sure...";read pick
+			if [ $pick = "A" ]
+			then
+    				echo "Don't go there Hillary we only have 2 hours to debate about facts not lies"
+    			else
+        			echo "Well Hillary with all the money you make you should dress better "
+			fi
+
+		fi
+    fi
+
+
+else
+    echo "A.Let me first say Crooked Hillary should be in Prison not debating...
+B.We need to Make America Great Again and Hillary can't do that..";read choice
+     if [ $choice = "A" ]
+     then
+            echo "A.This is coming from the guy who spends five hours fixing his Hair...
+B.Donald can we have a settle debate for pete sake...";read option
+		if [ $option = "A" ]
+                then
+                        echo "A.Hillary, I know you love numbers how about 100% Trump Victory 
+B.Listen Hillary or should of course say Crooked Hillary theres a cell with your name on it";read pick
+	        	if [ $pick = "A" ]
+			then
+		    		echo "Flip the Stats and you have an accurate Headline then Trump comes back with  you are kidding right because i'm winning Moron"
+		    	else
+		        	echo "Well to everyone watching you can see Donald is total dumbass so I am done with this goodbye!"
+		        fi
+		else
+	                echo "A.That is simply up to you Hillary or shall I say Crooked Hillary
+B.Crooked Hillary Relax we have only just begun";read pick
+	        	if [ $pick = "A" ]
+			then
+		    		echo "Good Luck Donald watching me win"
+		    	else
+		        	echo "Don't tell me to Relax you dope because I know people donald who will take you down"
+			fi
+		fi
+
+     else
+	    echo "A. Well Donald your right because America is Great..
+B. Donald You have no clue what your talking about just leave already...";read option
+		if [ $option = "A" ]
+		then
+    			echo "A. I'm tired of this country being run down by people like Hillary
+B. You obviously need a fact check Hillary please don't make me laugh";read pick
+			if [ $pick = "A" ]
+			then
+    				echo "You have no Chance donald so Good Luck"
+    			else
+        			echo "Here's a fact check i'm Winning while you sulk and cry with Mayor Gulliani"
+			fi
+
+		else
+        		echo "A. Everyone needs to know the Clinton family have more problems than the Kardashians...
+B. All I care about is the people in this country but you wouldn't know anything about that...";read pick
+			if [ $pick = "A" ]
+			then
+    				echo "Don’t go there Hilary said, but trump came back with “Tell Bill that” then Bill came on stage to attack Donald "
+    			else
+        			echo "Listen you need to pay your fair amount taxes and dont just say your going to release your return.YOU LIAR "
+			fi
+		fi
+    fi
+fi
